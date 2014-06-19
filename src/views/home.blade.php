@@ -4,15 +4,21 @@
 
 <h2>Home Page - Laravel Signer-Upper</h2>
 
-<p>If this was your home page, you'd be talking about your application here.</p>
+<p>If this were your home page, you'd be reading about your application.</p>
 
 <p>This is a demo of Laravel Signer-Upper, a plugin for laravel that provides a login and sign up for your application.  The features include:</p>
 
 <ul>
-<li>Sign Up</li>
+<li>Sign Up to an application by confirming an email</li>
 <li>Resend Confirmation Email</li>
 <li>Password Recovery</li>
 </ul>
+
+<p>To test the functionality, simply sign up to this webpage by clicking the Sign up link above.</p>
+
+<h3>Reporting Bugs and Asking Questions</h3>
+
+{{ HTML::link('https://github.com/iateadonut/signup/issues', 'Laravel Signup Issues') }}
 
 <h3>Installing</h3>
 
@@ -20,7 +26,20 @@
 
 <ol>
 <li>Move files into app_root/vendor directory</li>
-<li>Add 'Iateadonut\Signup\SignupServiceProvider', to the 'providers' array in app_root/config/app.php</li>
+
+<ul>
+	<li><h4>through github</h4>
+		<ol>
+			<li>cd app_root/vendor/</li>
+			<li>mkdir iateadonut</li>
+			<li>cd iateadonut</li>
+			<li>git clone https://github.com/iateadonut/signup.git</li>
+		</ol>
+	
+	</li>
+</ul>
+<br />
+<li>Add 'Iateadonut\Signup\SignupServiceProvider', to the 'providers' array in app_root/app/config/app.php</li>
 <li>Add
 <pre>
 "psr-0": {
