@@ -8,7 +8,7 @@
 
 <script type='text/javascript'>
 setTimeout(function() {
-	window.location.href = "/";
+	window.location.href = "/meat";
 }, 4500);
 </script>
 

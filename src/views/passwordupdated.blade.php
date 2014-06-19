@@ -7,11 +7,11 @@
 	
 	<p>Your password has been updated and you have been logged in.</p>
 
-	<p>You will be {{ HTML::link('', 'redirected') }} momentarily.</p>
+	<p>You will be {{ HTML::link('/meat', 'redirected') }} momentarily.</p>
 	
 	<script type='text/javascript'>
 	setTimeout(function() {
-		window.location.href = "/";
+		window.location.href = "/meat";
 	}, 4500);
 	</script>
 	
