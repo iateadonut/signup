@@ -1,0 +1,54 @@
+@CHARSET "UTF-8";
+
+p.warning
+{
+	color: red;
+}
+
+label.loginLabel
+{
+	display: block;
+	float: left;
+	width: 6em;
+
+}
+
+span.labelHolder
+{
+	
+	color: white;
+	
+}
+
+#loginFormHolder
+{
+	float: right;
+}
+
+#header,#content
+{
+	width:800px;
+	margin: auto;
+}
+
+#header
+{
+	font-family:'Lucida Grande', Tahoma, Arial, sans-serif;
+	font-size:14px;
+	color:#484848;
+}
+
+#title
+{
+	float:left;
+}
+
+#content
+{
+	padding-top: 10px;
+	clear:both;
+	font-family:'Lucida Grande', Tahoma, Arial, sans-serif;
+	font-size:16px;
+}
+
+

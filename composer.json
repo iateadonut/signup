@@ -1,0 +1,27 @@
+{
+    "name": "iateadonut/signup",
+    "description": "A signup with email confirmation form for Laravel",
+	"version": "1.0",
+	"keywords": ["signup", "laravel"],
+	"homepage": "https://github.com/iateadonut/signup",
+	"license": "MIT",
+    "authors": [
+        {
+            "name": "iateadonut",
+            "email": "edenwired@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Iateadonut\\Signup\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}

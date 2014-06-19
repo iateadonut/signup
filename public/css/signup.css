@@ -1,0 +1,68 @@
+
+div.signupbox
+{
+	
+	clear:both;
+	
+	width:600px;
+	background-color:#CECECE;
+	border: 1px solid black;
+	margin:5px;
+	padding: 10px;
+	padding-bottom: 15px;
+
+	margin:auto;
+	margin-bottom:3em;
+	
+	-webkit-border-radius:15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	
+	-webkit-box-shadow: #7F7F7F 0 0 8px;
+	-moz-box-shadow: #7F7F7F 0 0 8px;
+	box-shadow: #7F7F7F 0 0 8px;
+	
+	behavior: url('../lib/PIE/PIE.php');
+	
+	font-family:'Lucida Grande', Tahoma, Arial, sans-serif;
+	font-size:14px;
+	color:#484848;
+	
+	background-image:url('../pics/highlight.png');
+	
+	text-align:left;
+	
+	padding-bottom:25px;
+	
+	position:relative;  /* so the button can be positioned absolutely */
+	
+}
+
+div.signupbox input
+{
+	
+	border: 1px solid black;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	behavior: url('../vendor/PIE/PIE.php');
+	padding: 5px;
+	width:30em;
+	
+}
+
+div.signupbox input.createAccount
+{
+    
+    bottom: -15px;
+    display: block;
+    padding: 5px 20px;
+    position: absolute;
+    right: 35px;
+   /*  float:right;
+    margin:10px;  */
+    background:#DADADA;
+    
+}
+
+
