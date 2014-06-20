@@ -73,6 +73,16 @@ to autoload in app_root/composer.json so it looks like:
 });</pre>
 </li>
 <li>Configure SMTP Mail in app_root/config/mail.php</li>
+<li>And because we're working with passwords, you probably want ssl enabled in app_root/app/filters.php:
+<pre>
+App::before(function($request)
+{
+    if( ! Request::secure())
+    {
+        return Redirect::secure(Request::path());
+    }
+});
+</pre></li>
 </ol>
 
 
