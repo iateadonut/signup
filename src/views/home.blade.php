@@ -22,9 +22,18 @@
 
 <h3>To Do</h3>
 <ul>
-<li>composer</li>
-<li>copy myLogo.png to yourLogo.png during upgrade</li>
+<li>update packagist</li>
 </ul>
+
+<h3>Update Packagist (for developers of this project)</h3>
+
+<ol>
+	<li>/laravel_signup/workbench/iateadonut/signup> git push origin master</li>
+	<li>> git tag -a v1.0.x -m "1.0.x"</li>
+	<li>> git push origin --tag</li>
+	<li>login to packagist and force update</li>
+</ol>
+
 
 <h3>Installing</h3>
 
