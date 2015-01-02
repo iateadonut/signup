@@ -124,7 +124,7 @@
 	Copy vendor/iateadonut/signup/src/views/layout.blade.php and home.blade.php to app_root/app/views/iateadonut/signup/ .  You'll almost certainly want to over-ride the default layout with this layout instead.
 	</li>
 
-	<li>And change the logo /public/packages/iateadonut/signup/images/yourLogo.png and myLogo.png to your own logo.</li>
+	<li>Change the logo link in app_root/app/views/packages/iateadonut/signup/layout.blade.php to your own logo (which should probably reside in app_root/public/images/ .</li>
 
 </ol>
 
