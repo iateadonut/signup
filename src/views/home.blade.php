@@ -57,7 +57,7 @@
 				<ol>
 				<li>cd app_root/</li>
 				<li>composer require iateadonut/signup</li>
-				<li>version constraint: 1.0.*</li>
+				<li>version constraint: 1.1.*</li>
 				</ol>
 			</li>
 		</ul>
