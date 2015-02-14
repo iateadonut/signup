@@ -130,11 +130,32 @@
 	</li>
 
 	<li>
-	Copy vendor/iateadonut/signup/src/views/layout.blade.php and home.blade.php to app_root/app/views/iateadonut/signup/ .  You'll almost certainly want to over-ride the default layout with this layout instead.
+	Copy vendor/iateadonut/signup/src/views/layout.blade.php and home.blade.php
+	 to app_root/app/views/iateadonut/signup/ .  You'll almost certainly want
+	 to over-ride the default layout with this layout instead.
 	</li>
 
-	<li>Change the logo link in app_root/app/views/packages/iateadonut/signup/layout.blade.php to your own logo (which should probably reside in app_root/public/images/ .</li>
+	<li>Change the logo link in 
+	app_root/app/views/packages/iateadonut/signup/layout.blade.php
+	 to your own logo (which should probably reside in app_root/public/images/ .</li>
 
+	<li> If you have a system that depends on the date for the user, you can
+	set it (based on user's input during signup) for your application with the
+	following filter in app_root/app/filters.php
+	<pre>
+	App::before(function($request)
+	{
+		if ( !Auth::guest() ) {
+			$timezone = (Auth::user()->time_zone) ? 
+				Auth::user()->time_zone : 
+				Config::get('app.timezone');
+			date_default_timezone_set($timezone);
+			
+			DB::statement("SET time_zone = '" . $timezone . "'");
+		}
+	});
+	</pre>
+	 
 </ol>
 
 

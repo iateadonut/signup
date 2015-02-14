@@ -26,7 +26,7 @@
 
 
 <script type='text/javascript'>
-var tzo=(new Date().getTimezoneOffset()/60)*(-1);
+var tzo=(new Date().getTimezoneOffset())*(-1);
 </script>
 
 
@@ -51,9 +51,13 @@ var tzo=(new Date().getTimezoneOffset()/60)*(-1);
 	<div id='BDATE1' style='float:right;'></div><input type='text' maxlength=10 name='bdate' id='bdate' ><br>
 
 	
-	time zone: <span><script type='text/javascript'>document.write("<input type=hidden value='"+tzo+"' name='timezone'>");</script> <script type='text/javascript'>document.write("probably UTC "+tzo);</script></span><br>			
+	time zone: <br />{{ $tz_dropdown }}
+
+	<script>
+	//document.write("probably UTC "+tzo);
+	$('#timezone option[data-int_offset='+tzo+']').attr('selected', 'selected');
+	</script>
 	<input type='submit' value='create account' disabled=true id='createAccount' class='createAccount'></form>
-	
 	<p>Use this when signing up for a new account.</p>
 	
 </div>

@@ -22,6 +22,10 @@ $(function() {
 	{
 		checkEmail2();
 	}
+	if ( $('#bdate').val().length > 1  ) {
+		validateDate();
+	}	
+	
 	
 	//BIND
 	$('#email3').on('keyup change', function() {
@@ -85,7 +89,7 @@ function isStringEmail( requestedEmail )
 }
 
 function enablecreateAccount() {
-	console.log(dateOK+'-dateOK '+same+'-same '+same3+'-same3 '+same2+'-same2 '+password1+'-password1 '+password2+'-password2');
+	//console.log(dateOK+'-dateOK '+same+'-same '+same3+'-same3 '+same2+'-same2 '+password1+'-password1 '+password2+'-password2');
 	if (same==0&&same3==0&&same2==0&&password1==1&&password2==1&&dateOK==1)
 	{
 		document.getElementById('createAccount').disabled = false;
@@ -117,7 +121,7 @@ function checkPassword() {
     font_7.appendChild(document.createTextNode("OK") );
 	document.getElementById('PW1').appendChild( font_7 );	 }
 	checkPassword2();
-	console.log( same+'-same '+ same2+'-same2 ' + same3+'-same3')
+	//console.log( same+'-same '+ same2+'-same2 ' + same3+'-same3')
 	if ( same!=0 || same3!=0 || same2!=0 )
 	{
 		checkEmail();

@@ -16,7 +16,13 @@ class SignupController extends \BaseController {
 
 	public function showSignup()
 	{
-		return View::make('signup::signup');
+		$tz_array = TimezoneController::getTz_array();
+
+		$tz_dropdown = View::make('signup::timezone_dropdown')
+			->with('tz_array', $tz_array);
+		
+		return View::make('signup::signup')
+			->with('tz_dropdown', $tz_dropdown);
 	}
 
 	public function set_tz_by_offset($offset) {
@@ -140,13 +146,15 @@ class SignupController extends \BaseController {
 		//GENERATE $newcode - RANDOM STRING TO VERIFY SIGNUP
 		for( $code_length = 25, $newcode = ''; strlen($newcode) < $code_length; $newcode .= chr(!rand(0, 2) ? rand(48, 57) : (!rand(0, 1) ? rand(65, 90) : rand(97, 122))));
 
+		//echo Input::get('timezone');exit;
+		
 		$user = new User;
 		$user->email		= Input::get('email');
 		$user->birthday		= Input::get('bdate');
 		$user->password		= Hash::make( Input::get('pw') );
 		$user->id_code		= $newcode;
-		$this->set_tz_by_offset( Input::get('timezone'));
-		$user->time_zone	= date('P');
+		//$this->set_tz_by_offset( Input::get('timezone'));
+		$user->time_zone	= Input::get('timezone');
 		$user->save();
 		
 		$data = array(
