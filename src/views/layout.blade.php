@@ -3,6 +3,10 @@
 {{ HTML::script('/packages/iateadonut/signup/js/jquery-1.11.1.min.js') }}
 {{ HTML::script('/packages/iateadonut/signup/js/jquery-migrate-1.2.1.min.js') }}
 {{ HTML::style('/packages/iateadonut/signup/css/layout.css') }}
+
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+@yield('head')
+
 </head>	
 <body>
 

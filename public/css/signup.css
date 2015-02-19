@@ -4,7 +4,7 @@ div.signupbox
 	
 	clear:both;
 	
-	width:600px;
+	max-width:600px;
 	background-color:#CECECE;
 	border: 1px solid black;
 	margin:5px;
@@ -47,7 +47,8 @@ div.signupbox input
 	border-radius:10px;
 	behavior: url('../vendor/PIE/PIE.php');
 	padding: 5px;
-	width:30em;
+	max-width:30em;
+	width:95%;
 	
 }
 
@@ -59,8 +60,6 @@ div.signupbox input.createAccount
     padding: 5px 20px;
     position: absolute;
     right: 35px;
-   /*  float:right;
-    margin:10px;  */
     background:#DADADA;
     
 }
