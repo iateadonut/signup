@@ -4,6 +4,9 @@
 
 <h2>Home Page - Laravel Signer-Upper</h2>
 
+<p>DON'T USE THIS ANYMORE!  YOU SHOULD BE USING LARAVEL 5.1, NOT 4.2.
+Please see here: <a href='https://github.com/iateadonut/signup'>https://github.com/iateadonut/signup</a></p>
+
 <p>If this were your home page, you'd be reading about your application.</p>
 
 <p>This is a demo of Laravel Signer-Upper, a plugin for laravel that provides a login and sign up for your application.  The features include:</p>
